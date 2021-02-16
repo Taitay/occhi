@@ -1,0 +1,128 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600&display=swap');
+
+@import "../../node_modules/normalize.css/normalize";
+@import "../../node_modules/slick-carousel/slick/slick";
+@import "global";
+
+
+@font-face{
+    font-family: 'SFProDisplay-Light', sans-serif;
+    src: url("../fonts/SFProDisplay-Light.woff2") format('woff2'),
+         url('../fonts/SFProDisplay-Light.woff') format('woff');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
+/* HEADER-TOP */
+.header-top{
+	height: 58px;
+	background-color: #8A589E;
+}
+
+.header-top_inner{
+    display: flex;
+    justify-content: space-between;
+    padding-top: 19px;
+    align-items: center;
+}
+
+.header-top__social{
+	display: flex;
+}
+
+.header-top__list + .header-top__list{
+    margin-left: 17px;
+}
+
+.header-top__menu{
+    display: flex;
+}
+
+.header-top__menu-list + .header-top__menu-list{
+    margin-left: 26px;
+}
+
+.header-top__menu-link{
+    font-weight: 600;
+    line-height: 17px;
+    font-style: normal;
+    color: #FFFFFF;
+    text-transform: uppercase;
+    transition: all 0.3s;
+}
+
+.header-top__menu-link:hover{
+    color: #FFA6FF;
+}
+
+/* HRADER-BOTTOM */
+.header-bottom__inner{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+    align-items: center;
+}
+
+.header-bottom_menu{
+    display: flex;
+}
+
+.header-bottom_menu-list + .header-bottom_menu-list{
+    margin-left: 26px;
+}
+
+.header-bottom_menu-link{
+    font-style: normal;
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 24px;
+    letter-spacing: -0.02em;
+    color: #333333;
+    transition: all 0.3s;
+    text-transform: uppercase;
+}
+
+.header-bottom_menu-link:hover{
+    color: #8A589E;
+}
+
+/* MENU-2-SERVICES */
+.services-relative{
+    position: relative;
+}
+
+.header-bottom__services-box{
+    position: absolute;
+    display: flex;
+    right: 0;
+    border-top: 3px solid #8A589E;
+    background-color: #FFFFFF;
+    top: 50px;
+    display: non;
+}
+
+.header-bottom__services{
+    border-right: 1px solid #8A589E;
+    width: 260px;
+    padding: 23px 23px 32px 39px;
+    &:last-child{
+        border-right: none;
+}
+}
+
+.header-bottom__services-title{
+    text-transform: uppercase;
+    font-weight: 500;
+    font-size: 17px;
+    line-height: 21px;
+    color: #333333;
+}
+
+.header-bottom__services-list{
+    margin-bottom: 12px;
+    margin-top: 21px;
+}
+.services-title__box{
+    height: 43px;
+}
